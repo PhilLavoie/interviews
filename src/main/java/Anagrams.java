@@ -1,14 +1,15 @@
-public class Anagrams {
+import answers.AnagramsAnswer;
 
-    public static boolean isAnagram(String firstWord, String secondWord) {
+import java.util.List;
+
+public class Anagrams extends AnagramsAnswer {
+
+    public boolean isAnagram(String firstWord, String secondWord) {
         return false;
     }
 
-    /**
-     * Gives all the words that are anagrams of each other.
-     *
-     * public ? anagrams(List<String> words) {
-     *
-     * }
-     */
+    public List<List<String>> anagrams(List<String> words) {
+        return null;
+    }
+
 }

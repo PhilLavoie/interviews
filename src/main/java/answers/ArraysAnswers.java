@@ -14,6 +14,18 @@ public class ArraysAnswers {
         return reverse;
     }
 
+    public int[] inplaceReverse(int[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            int j = array.length - 1 - i;
+
+            array[i] = array[j];
+            array[j] = temp;
+        }
+
+        return array;
+    }
+
     //TODO: inplace reverse
 
     //Have redundant check, possible to use ArrayList to avoid this but then we have ArrayList overhead.
