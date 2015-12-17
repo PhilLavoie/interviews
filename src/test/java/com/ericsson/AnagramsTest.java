@@ -1,3 +1,6 @@
+package com.ericsson;
+
+import com.ericsson.Anagrams;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +12,11 @@ public class AnagramsTest {
 
     @Before
     public void setup() {
-        anagrams = new Anagrams();
+        anagrams = getImplementation();
+    }
+
+    protected Anagrams getImplementation() {
+        return new Anagrams();
     }
 
     @Test

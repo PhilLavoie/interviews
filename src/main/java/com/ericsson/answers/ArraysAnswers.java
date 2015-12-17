@@ -1,6 +1,8 @@
-package answers;
+package com.ericsson.answers;
 
-public class ArraysAnswers {
+import com.ericsson.Arrays;
+
+public class ArraysAnswers extends Arrays {
 
     public int[] reverse(int[] array) {
         int[] reverse = new int[array.length];
@@ -25,8 +27,6 @@ public class ArraysAnswers {
 
         return array;
     }
-
-    //TODO: inplace reverse
 
     //Have redundant check, possible to use ArrayList to avoid this but then we have ArrayList overhead.
     //both solutions are good.

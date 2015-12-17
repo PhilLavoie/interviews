@@ -1,3 +1,5 @@
+package com.ericsson;
+
 import java.util.List;
 
 public class Intersections {

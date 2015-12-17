@@ -1,11 +1,13 @@
-package answers;
+package com.ericsson.answers;
+
+import com.ericsson.Anagrams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class AnagramsAnswer {
+public class AnagramsAnswer extends Anagrams {
 
     public boolean isAnagram(String firstWord, String secondWord) {
         //Fast implementation using HashMap on characters: scales well

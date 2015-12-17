@@ -1,3 +1,6 @@
+package com.ericsson;
+
+import com.ericsson.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +13,12 @@ public class ArraysTest {
 
     @Before
     public void setup() {
-        arrays = new Arrays();
+        arrays = getImplementation();
+    }
+
+    //Override this to set the implementation.
+    protected Arrays getImplementation() {
+        return new Arrays();
     }
 
     @Test
@@ -39,6 +47,17 @@ public class ArraysTest {
 
         assertArrayEquals(theExpectedResult, theResult);
         assertSame(theInput, theResult);
+    }
+
+    @Test
+    public void testInplaceReverseOneElement() {
+        int[] theInput = {5};
+        int[] theExpectedResult = {5};
+
+        int[] theEffectiveResult = arrays.inplaceReverse(theInput);
+
+        assertArrayEquals(theExpectedResult, theEffectiveResult);
+        assertSame(theInput, theEffectiveResult);
     }
 
     @Test
