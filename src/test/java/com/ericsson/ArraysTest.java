@@ -1,12 +1,10 @@
 package com.ericsson;
 
-import com.ericsson.Arrays;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-//No null test just because it's overkill for interview :)
 public class ArraysTest {
 
     private Arrays arrays;
@@ -39,9 +37,20 @@ public class ArraysTest {
     }
 
     @Test
-    public void testInplaceReverseNormalInput() {
+    public void testInplaceReverseNormalInputOddLength() {
         int[] theInput = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] theExpectedResult = new int[] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+
+        int[] theResult = arrays.inplaceReverse(theInput);
+
+        assertArrayEquals(theExpectedResult, theResult);
+        assertSame(theInput, theResult);
+    }
+
+    @Test
+    public void testInplaceReverseNormalInputEvenLength() {
+        int[] theInput = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] theExpectedResult = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
         int[] theResult = arrays.inplaceReverse(theInput);
 
@@ -53,6 +62,17 @@ public class ArraysTest {
     public void testInplaceReverseOneElement() {
         int[] theInput = {5};
         int[] theExpectedResult = {5};
+
+        int[] theEffectiveResult = arrays.inplaceReverse(theInput);
+
+        assertArrayEquals(theExpectedResult, theEffectiveResult);
+        assertSame(theInput, theEffectiveResult);
+    }
+
+    @Test
+    public void testInplaceReverseEmpty() {
+        int[] theInput = {};
+        int[] theExpectedResult = {};
 
         int[] theEffectiveResult = arrays.inplaceReverse(theInput);
 
