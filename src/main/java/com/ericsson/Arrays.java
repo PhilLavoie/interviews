@@ -11,7 +11,7 @@ public class Arrays {
      * @throws NullPointerException if array is null
      */
     public boolean contains(int[] array, int element) {
-        return false;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
     /**
@@ -24,7 +24,7 @@ public class Arrays {
      * @throws NullPointerException if array is null
      */
     public int[] odds(int[] array) {
-        return null;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
     /**
@@ -37,7 +37,7 @@ public class Arrays {
      * @throws NullPointerException if array is null
      */
     public int[] reverse(int[] array) {
-        return null;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
     /**
@@ -50,7 +50,7 @@ public class Arrays {
      * @throws NullPointerException if array is null
      */
     public int[] inplaceReverse(int[] array) {
-        return null;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
 }

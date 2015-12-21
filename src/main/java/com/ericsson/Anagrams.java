@@ -19,11 +19,22 @@ public class Anagrams {
      * @throws NullPointerException when one of the parameters is null.
      */
     public boolean isAnagram(String firstWord, String secondWord) {
-        return false;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
+    /**
+     * Returns a list where each element is a list of anagrams extracted
+     * from the given input.
+     *
+     * @param words The list of words to find anagrams in.
+     *
+     * @return A list of anagrams. Every element contains a list of words that are
+     * anagrams of each other.
+     *
+     * @throws NullPointerException if words is null.
+     */
     public List<List<String>> anagrams(List<String> words) {
-        return null;
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 
 }

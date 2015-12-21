@@ -1,6 +1,7 @@
 package com.ericsson;
 
 import java.util.List;
+import java.util.Set;
 
 public class Intersections {
 
@@ -12,7 +13,7 @@ public class Intersections {
      *
      * @return The intersection of the first and second collection.
      */
-    public static List<String> intersection(List<String> firstWords, List<String> secondWords) {
-        return null;
+    public Set<String> intersection(List<String> firstWords, List<String> secondWords) {
+        throw new UnsupportedOperationException("waiting on candidate to implement...");
     }
 }
